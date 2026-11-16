@@ -1,3 +1,6 @@
+:root{
+    --orange: #e76f51;
+}
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -21,3 +24,137 @@ a{
 
 /* ----------- */
 
+/*  App Style  */
+
+.header{
+    background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 55rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.app_logo{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.app_logo_img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    display: none;
+}
+.menu_item{
+
+}
+.menu_link{
+
+}
+.nav_menu{
+    position: fixed;
+    background-color: rgb(57, 65, 62);
+    left: -25rem;
+    top: 0;
+    bottom: 0;
+    width: 25rem;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+}
+.nav_menu_open{
+    left: 0;
+}
+.mobile_menu{
+
+}
+.mobile_menu_item{
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+.mobile_menu_item:hover{
+    transform: translateY(-3px);
+    border-bottom: 1px solid #FFF;
+    width: 50%;
+}
+.mobile_menu_link{
+    color: #fff;
+    
+}
+.nav_menu_links{
+    display: flex;
+    margin-top: 3rem;
+}
+.nav_menu_link{
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    flex-basis: 50%;
+    border: 1px solid #fff;
+}
+.nav_menu_link_border{
+
+}
+.header_links{
+    display: none;
+}
+.header_link{
+
+}
+.header_link_border{
+
+}
+.nav_btn{
+    background-color: #fff;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_btn_line{
+    display: block;
+    width: 2.5rem;
+    border-radius: 3rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+.nav_btn_line::after,
+.nav_btn_line::before{
+    content: " ";
+    position: absolute;
+    width: 2.5rem;
+    border-radius: 3rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    transition: all 250ms ease-in-out;
+
+}
+.nav_btn_line::after{
+    top: -0.8rem;
+}
+.nav_btn_line::before{
+    top: 0.8rem;
+}
+
+.nav_btn_open .nav_btn_line{
+    background-color: transparent;
+}
+.nav_btn_open .nav_btn_line::after{
+    transform: translateY(8px) rotate(45deg);
+}
+.nav_btn_open .nav_btn_line::before{
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* --------------------- */
