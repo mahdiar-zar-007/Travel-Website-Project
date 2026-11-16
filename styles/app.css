@@ -41,9 +41,15 @@ a{
     align-items: center;
     padding: 1rem 0;
 }
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+}
 .app_logo{
     width: 5.5rem;
     height: 5.5rem;
+    display: block;
+    margin-right: 3rem;
 }
 .app_logo_img{
     width: 100%;
@@ -51,12 +57,13 @@ a{
 }
 .menu{
     display: none;
+
 }
 .menu_item{
-
+    margin-right: 1.5rem;
 }
 .menu_link{
-
+    color: #d2d2d2;
 }
 .nav_menu{
     position: fixed;
@@ -106,10 +113,14 @@ a{
     display: none;
 }
 .header_link{
-
+    color: #fff;
+    font-family: "roboto medium";
+    margin-left: 1.5rem;
 }
 .header_link_border{
-
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 10rem;
 }
 .nav_btn{
     background-color: #fff;
