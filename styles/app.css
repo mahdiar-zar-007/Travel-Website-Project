@@ -4,6 +4,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: #F8E1DB;
 }
 
 *, *:after, *:before{
@@ -30,7 +31,7 @@ a{
     background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 55rem;
+    min-height: 70rem;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -64,6 +65,9 @@ a{
 }
 .menu_link{
     color: #d2d2d2;
+}
+.menu_link:hover{
+    color: #FFF;
 }
 .nav_menu{
     position: fixed;
@@ -167,5 +171,78 @@ a{
 }
 .nav_btn_open .nav_btn_line::before{
     transform: translateY(-8px) rotate(-45deg);
+}
+.header_title{
+    font-family: "archivo Black";
+    color: #fff;
+    line-height: 1.2;
+    max-width: 35rem;
+    font-size: 5rem;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    margin-top: 7rem;
+}
+.header_caption{
+    max-width: 50rem;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+.header_content_btn{
+    background-color: var(--orange);
+    color: #fff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 18rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    transition: all 150ms ease-in-out;
+}
+.header_content_btn:hover{
+    transform: translateY(-0.5rem);
+}
+.header_content_btn:active{
+    transform: translateX(0);
+}
+.main{
+    padding: 4rem 0;
+    margin-top: -10rem;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.service{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    border-radius: 2rem;
+    height: 282px;
+}
+.service__img{
+    display: block;
+}
+.service_title{
+    font-family: "archivo Black";
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
+    color: #3B3735;
+}
+.service_caption{
+    text-align: center;
+    color: #3B3735;
 }
 /* --------------------- */
